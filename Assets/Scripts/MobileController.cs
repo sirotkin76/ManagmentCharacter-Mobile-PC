@@ -47,5 +47,19 @@ public class MobileController : MonoBehaviour, IDragHandler, IPointerUpHandler, 
 		if (inputVector.y != 0) return inputVector.y;
 		else return Input.GetAxis("Vertical");
 	}
+
+	public float VerticalJoy2() {
+		if (inputVector.y != 0) 
+			return inputVector.y; 
+		else 
+			return 0.0f;
+	}
+
+	public float HorizontalJoy2() {
+		if (inputVector.x != 0)
+			return inputVector.x;
+		else 
+			return 0.0f;
+	}
 }
  
